@@ -1,0 +1,26 @@
+{
+  "name": "app-service",
+  "description": "Simple paiement API",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Simplon",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm install --production",
+    "postinstall": "chmod +x post-build.sh && ./post-build.sh"
+  },
+  "dependencies": {
+    "applicationinsights": "^2.3.5",
+    "dotenv": "^17.0.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0",
+    "mssql": "^10.0.1",
+    "redis": "^4.6.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
